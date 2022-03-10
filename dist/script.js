@@ -1,6 +1,5 @@
 var numeroSecreto = parseInt(Math.random() * 11);
 var tentativas = 0;
-var opcao = document.getElementById("jogar").value;
 var elementoRasultado = document.getElementById("resultado");
 var chute = document.getElementById("valor");
 
@@ -26,8 +25,7 @@ function Chutar() {
 			if (tentativas >= 3) {
 				elementoResultado.innerHTML =
 					"Você errou 3 vezes. Que pena! O número era " + numeroSecreto;
-				}
 			}
 		}
 	}
-
+}
